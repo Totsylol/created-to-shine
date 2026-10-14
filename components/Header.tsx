@@ -39,14 +39,14 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex lg:items-center lg:gap-1">
+        <nav className="hidden xl:flex xl:items-center xl:gap-1">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-md px-4 py-2.5 text-base font-medium transition-colors ${
+                className={`rounded-md px-4 py-2.5 text-lg font-medium transition-colors ${
                   active
                     ? "bg-navy text-cream"
                     : "text-navy hover:bg-navy/10"
@@ -60,7 +60,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-navy lg:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy xl:hidden"
           aria-expanded={open}
           aria-label="Toggle navigation menu"
           onClick={() => setOpen((v) => !v)}
@@ -83,7 +83,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 lg:hidden">
+        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 xl:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
@@ -92,7 +92,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`rounded-md px-4 py-2.5 text-base font-medium ${
+                  className={`rounded-md px-4 py-2.5 text-lg font-medium ${
                     active ? "bg-navy text-cream" : "text-navy hover:bg-navy/10"
                   }`}
                 >
