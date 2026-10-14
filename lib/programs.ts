@@ -3,6 +3,8 @@ export type Program = {
   name: string;
   summary: string;
   details: string[];
+  image: string;
+  imageAlt: string;
 };
 
 export const PROGRAMS: Program[] = [
@@ -12,10 +14,12 @@ export const PROGRAMS: Program[] = [
     summary:
       "Structured vocational education that builds workplace skills, independence, and employment readiness for adults with disabilities.",
     details: [
-      "Workplace skills: professional communication, teamwork, following workplace routines, problem solving, time management, workplace expectations, hospitality, customer service, beverage preparation, food safety, inventory management, cleaning and sanitation.",
-      "Employment preparation: career exploration, job readiness, resume development, interview preparation, workplace advocacy, and understanding job responsibilities.",
-      "Independent living skills: financial literacy, transportation skills, self-advocacy, decision making, safety awareness, following daily routines, and increasing independence.",
+      "Workplace skills and professional communication",
+      "Employment and interview preparation",
+      "Independent living and self-advocacy",
     ],
+    image: "/images/program-academy.jpg",
+    imageAlt: "A laptop reading \"never stop learning\" in front of a bookshelf",
   },
   {
     slug: "coffee-co",
@@ -23,10 +27,12 @@ export const PROGRAMS: Program[] = [
     summary:
       "The hands-on vocational training arm of the Academy — a mobile coffee cart where participants gain real workplace experience.",
     details: [
-      "A mobile coffee cart serves as a practical classroom, with participants serving at churches, conferences, community events, businesses, schools, and ministry gatherings.",
-      "Participants gain experience in hospitality, customer service, beverage preparation, food safety, workplace routines, teamwork, and responsibility.",
-      "As participants grow in skill and confidence, Created to Shine Ministries supports their transition into employment through partnerships with local businesses. Over time, Coffee Co. will grow from a mobile cart into a permanent community coffee location.",
+      "Hands-on hospitality and customer service",
+      "Serving at churches, events, and businesses",
+      "A pathway toward employment partnerships",
     ],
+    image: "/images/program-coffee.jpg",
+    imageAlt: "A latte with heart-shaped foam art on a wooden counter",
   },
   {
     slug: "family-education",
@@ -34,13 +40,12 @@ export const PROGRAMS: Program[] = [
     summary:
       "Equipping parents and caregivers with knowledge, resources, and practical tools to support and advocate for their loved ones.",
     details: [
-      "Understanding disability, development, and individual strengths.",
-      "Supporting communication, independence, and skill development.",
-      "Preparing for transitions into adulthood.",
-      "Navigating educational, vocational, and community resources.",
-      "Developing advocacy skills and becoming effective partners in decision-making.",
-      "Connecting with other families through mentoring and shared learning.",
+      "Understanding disability and development",
+      "Navigating resources and transitions",
+      "Advocacy and family mentoring",
     ],
+    image: "/images/program-education.jpg",
+    imageAlt: "An open book with its pages folded into the shape of a heart",
   },
   {
     slug: "community-inclusion",
@@ -48,11 +53,11 @@ export const PROGRAMS: Program[] = [
     summary:
       "Partnering with churches and community organizations to provide education and training on disability inclusion.",
     details: [
-      "Understanding disability.",
-      "Creating welcoming environments.",
-      "Supporting individuals with different needs.",
-      "Inclusive worship and community participation.",
-      "Disability theology.",
+      "Understanding disability together",
+      "Creating welcoming environments",
+      "Inclusive worship and participation",
     ],
+    image: "/images/program-inclusion.jpg",
+    imageAlt: "A diverse circle of hands reaching toward the center together",
   },
 ];

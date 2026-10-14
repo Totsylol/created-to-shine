@@ -26,29 +26,45 @@ export default function ServicesPage() {
           <Image
             src="/images/our-programs.jpg"
             alt="A Created To Shine Ministries participant planning a program on a whiteboard"
-            width={1000}
-            height={1499}
-            className="w-full rounded-xl object-cover shadow-md"
+            width={580}
+            height={435}
+            className="aspect-[4/3] w-full rounded-xl object-cover shadow-md"
           />
         </div>
       </Section>
 
-      {PROGRAMS.map((program, i) => (
-        <Section key={program.slug} tone={i % 2 === 0 ? "cream-dark" : "cream"} className="!py-14">
-          <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
-            {program.name}
-          </h2>
-          <p className="mt-3 max-w-3xl text-ink/80">{program.summary}</p>
-          <ul className="mt-6 space-y-3">
-            {program.details.map((detail) => (
-              <li key={detail} className="flex gap-3 text-sm leading-relaxed text-ink/85 sm:text-base">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-dark" />
-                <span>{detail}</span>
-              </li>
-            ))}
-          </ul>
-        </Section>
-      ))}
+      {PROGRAMS.map((program, i) => {
+        const imageOnLeft = i % 2 === 1;
+        return (
+          <Section key={program.slug} tone={i % 2 === 0 ? "cream-dark" : "cream"} className="!py-14">
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <div className={imageOnLeft ? "lg:order-2" : undefined}>
+                <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+                  {program.name}
+                </h2>
+                <p className="mt-3 text-ink/80">{program.summary}</p>
+                <ul className="mt-6 space-y-3">
+                  {program.details.map((detail) => (
+                    <li key={detail} className="flex gap-3 text-sm leading-relaxed text-ink/85 sm:text-base">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-dark" />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Image
+                src={program.image}
+                alt={program.imageAlt}
+                width={800}
+                height={600}
+                className={`aspect-[4/3] w-full rounded-xl object-cover shadow-md ${
+                  imageOnLeft ? "lg:order-1" : ""
+                }`}
+              />
+            </div>
+          </Section>
+        );
+      })}
 
       <Section tone="navy">
         <div className="mx-auto max-w-2xl text-center">
