@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 const LEADERSHIP = [
   {
     name: "Avdi Muco",
-    role: "Board President, Café Program Director",
+    role: "President, Coffee Co. Director",
   },
   {
     name: "Christina Muco",
-    role: "Board Vice President, Educational Program Director",
+    role: "Vice President, Education Program Director",
   },
   {
     name: "Megan Tucci",
-    role: "Board Treasurer, Disability Services Advisor",
+    role: "Treasurer, Curriculum Development",
   },
   {
     name: "Andy Palm",
-    role: "Board Secretary, Operations Advisor",
+    role: "Secretary, Operations Management",
   },
 ];
 
