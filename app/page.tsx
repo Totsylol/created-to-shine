@@ -86,7 +86,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Button href="/services" variant="outline">
+          <Button href="/services" variant="secondary">
             Learn more about our services
           </Button>
         </div>
