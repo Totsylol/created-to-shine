@@ -25,14 +25,14 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.jpg"
-            alt="Created to Shine Ministries logo"
-            width={44}
-            height={44}
+            alt="Created To Shine Ministries logo"
+            width={56}
+            height={56}
             className="rounded-full"
             priority
           />
-          <span className="font-serif text-lg font-semibold leading-tight text-navy sm:text-xl">
-            Created to Shine
+          <span className="font-serif text-xl font-bold leading-tight text-gold-dark sm:text-2xl">
+            Created To Shine
             <span className="block text-xs font-sans font-medium tracking-wide text-gold-dark">
               MINISTRIES
             </span>

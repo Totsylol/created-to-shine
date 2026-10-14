@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Send a message to Created to Shine Ministries.",
+  description: "Send a message to Created To Shine Ministries.",
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div className="mx-auto max-w-xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">Contact</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">
-          Send Us a Message
+          Send Us A Message
         </h1>
         <p className="mt-4 text-ink/80">
           Have a question, want to volunteer, or interested in partnering with
@@ -22,6 +22,14 @@ export default function ContactPage() {
         </p>
         <div className="mt-8 rounded-xl border border-gold/30 bg-cream-dark p-6">
           <ContactForm />
+        </div>
+        <div className="mt-8 text-sm text-ink/80">
+          <p className="font-semibold text-navy">Mailing Address</p>
+          <p className="mt-1">
+            37706 Colonial Dr S
+            <br />
+            Westland, MI 48185
+          </p>
         </div>
       </div>
     </Section>

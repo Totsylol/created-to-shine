@@ -23,16 +23,21 @@ export default function Footer() {
           <div className="flex items-start gap-3">
             <Image
               src="/images/logo.jpg"
-              alt="Created to Shine Ministries logo"
+              alt="Created To Shine Ministries logo"
               width={48}
               height={48}
               className="rounded-full"
             />
             <div>
-              <p className="font-serif text-lg font-semibold">Created to Shine Ministries</p>
+              <p className="font-serif text-lg font-semibold">Created To Shine Ministries</p>
               <p className="mt-1 text-sm text-cream/80">
                 A Christ-centered educational ministry equipping individuals with
                 disabilities and their families. Serving Wayne County, Michigan.
+              </p>
+              <p className="mt-2 text-sm text-cream/80">
+                37706 Colonial Dr S
+                <br />
+                Westland, MI 48185
               </p>
             </div>
           </div>
@@ -61,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-cream/20 pt-6 text-xs text-cream/60">
-          &copy; {COPYRIGHT_YEAR} Created to Shine Ministries. All rights reserved.
+          &copy; {COPYRIGHT_YEAR} Created To Shine Ministries. All rights reserved.
         </div>
       </div>
     </footer>

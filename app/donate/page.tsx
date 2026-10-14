@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Online giving for Created to Shine Ministries is coming soon. Learn about our 501(c)(3) status.",
+    "Online giving for Created To Shine Ministries is coming soon. Learn about our 501(c)(3) status.",
 };
 
 export default function DonatePage() {

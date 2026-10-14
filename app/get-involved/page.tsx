@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Get Involved",
   description:
-    "Ways to support Created to Shine Ministries: volunteer, partner your church or business, pray, or spread the word.",
+    "Ways to support Created To Shine Ministries: volunteer, partner your church or business, pray, or spread the word.",
 };
 
 const WAYS = [
@@ -35,7 +35,7 @@ export default function GetInvolvedPage() {
           Get Involved
         </p>
         <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">
-          Join Us in This Work
+          Join Us In This Work
         </h1>
         <p className="mt-4 max-w-2xl text-ink/80">
           Families play a vital role, and so does the community around them.
@@ -58,7 +58,7 @@ export default function GetInvolvedPage() {
       <Section tone="navy">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-2xl font-semibold text-gold-light">
-            Ready to get started?
+            Ready To Get Started?
           </h2>
           <p className="mt-3 text-cream/85">
             Reach out and let us know how you&apos;d like to help.

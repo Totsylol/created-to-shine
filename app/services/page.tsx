@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import { PROGRAMS } from "@/lib/programs";
@@ -6,19 +7,30 @@ import { PROGRAMS } from "@/lib/programs";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Created to Shine Ministries' programs: the Academy, Coffee Co., Family Education, and Community Inclusion.",
+    "Explore Created To Shine Ministries' programs: the Academy, Coffee Co., Family Education, and Community Inclusion.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <Section tone="cream" className="!pb-10">
-        <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">Services</p>
-        <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">Our Programs</h1>
-        <p className="mt-4 max-w-2xl text-ink/80">
-          Four programs working together to equip individuals with disabilities,
-          educate families, and build inclusive communities.
-        </p>
+        <div className="grid items-center gap-10 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">Services</p>
+            <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">Our Programs</h1>
+            <p className="mt-4 max-w-2xl text-ink/80">
+              Four programs working together to equip individuals with disabilities,
+              educate families, and build inclusive communities.
+            </p>
+          </div>
+          <Image
+            src="/images/our-programs.jpg"
+            alt="A Created To Shine Ministries participant planning a program on a whiteboard"
+            width={1000}
+            height={1499}
+            className="w-full rounded-xl object-cover shadow-md"
+          />
+        </div>
       </Section>
 
       {PROGRAMS.map((program, i) => (
@@ -41,7 +53,7 @@ export default function ServicesPage() {
       <Section tone="navy">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-2xl font-semibold text-gold-light">
-            Want to partner with one of our programs?
+            Want To Partner With One Of Our Programs?
           </h2>
           <p className="mt-3 text-cream/85">
             Churches, businesses, and individuals all play a role in helping

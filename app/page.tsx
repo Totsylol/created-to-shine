@@ -17,7 +17,7 @@ export default function Home() {
               Equipping individuals with disabilities and their families to shine.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-ink/80">
-              Created to Shine Ministries educates and equips individuals with
+              Created To Shine Ministries educates and equips individuals with
               disabilities through vocational training, employment preparation,
               family education, and community partnerships &mdash; creating pathways
               toward greater independence, belonging, and contribution.
@@ -33,11 +33,11 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/logo.jpg"
-              alt="Created to Shine Ministries logo"
-              width={380}
-              height={380}
-              className="w-64 rounded-2xl shadow-lg sm:w-80 lg:w-96"
+              src="/images/family-education.jpg"
+              alt="A family engaging in a Created To Shine Ministries education session"
+              width={1200}
+              height={800}
+              className="w-full rounded-2xl object-cover shadow-lg"
               priority
             />
           </div>

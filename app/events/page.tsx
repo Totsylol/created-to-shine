@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "Upcoming events from Created to Shine Ministries.",
+  description: "Upcoming events from Created To Shine Ministries.",
 };
 
 export default function EventsPage() {

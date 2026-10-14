@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story, mission, vision, theological foundation, and leadership behind Created to Shine Ministries.",
+    "The story, mission, vision, theological foundation, and leadership behind Created To Shine Ministries.",
 };
 
 const LEADERSHIP = [
@@ -84,31 +85,44 @@ export default function AboutPage() {
               welcome and include people of all abilities.
             </p>
             <p>
-              Created to Shine Ministries continues this calling in Michigan by
+              Created To Shine Ministries continues this calling in Michigan by
               developing educational pathways that strengthen individuals,
               families, churches, and communities.
             </p>
           </div>
-          <div className="rounded-xl border border-gold/30 bg-cream-dark p-6">
-            <h2 className="font-serif text-lg font-semibold text-navy">At a Glance</h2>
-            <dl className="mt-4 space-y-3 text-sm text-ink/80">
-              <div>
-                <dt className="font-semibold text-navy">Location</dt>
-                <dd>Wayne County, Michigan</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-navy">Status</dt>
-                <dd>501(c)(3) tax-exempt as of July 17, 2026</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-navy">EIN</dt>
-                <dd>42-4268107</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-navy">Public charity status</dt>
-                <dd>170(b)(1)(A)(vi)</dd>
-              </div>
-            </dl>
+          <div className="space-y-6">
+            <Image
+              src="/images/our-story.jpg"
+              alt="Created To Shine Ministries team members joining hands together"
+              width={1000}
+              height={1499}
+              className="w-full rounded-xl object-cover shadow-md"
+            />
+            <div className="rounded-xl border border-gold/30 bg-cream-dark p-6">
+              <h2 className="font-serif text-lg font-semibold text-navy">At A Glance</h2>
+              <dl className="mt-4 space-y-3 text-sm text-ink/80">
+                <div>
+                  <dt className="font-semibold text-navy">Location</dt>
+                  <dd>
+                    37706 Colonial Dr S
+                    <br />
+                    Westland, MI 48185
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-navy">Status</dt>
+                  <dd>501(c)(3) tax-exempt as of July 17, 2026</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-navy">EIN</dt>
+                  <dd>42-4268107</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-navy">Public charity status</dt>
+                  <dd>170(b)(1)(A)(vi)</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </Section>
@@ -118,7 +132,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-serif text-2xl font-semibold text-navy">Mission</h2>
             <p className="mt-3 leading-relaxed text-ink/80">
-              Created to Shine Ministries educates and equips individuals with
+              Created To Shine Ministries educates and equips individuals with
               disabilities through vocational training, employment preparation,
               family education, and community partnerships, creating pathways
               toward greater independence, belonging, and contribution.
@@ -155,7 +169,7 @@ export default function AboutPage() {
           Theological Foundation
         </h2>
         <p className="mt-4 max-w-3xl text-cream/85">
-          Created to Shine Ministries is founded on the biblical truth that
+          Created To Shine Ministries is founded on the biblical truth that
           every person is created in the image of God (Genesis 1:27).
           Throughout Scripture, God demonstrates that human worth is not
           determined by ability, productivity, or independence.

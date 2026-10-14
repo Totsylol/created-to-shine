@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Resources",
-  description: "Resources for individuals with disabilities and their families, from Created to Shine Ministries.",
+  description: "Resources for individuals with disabilities and their families, from Created To Shine Ministries.",
 };
 
 const CATEGORIES = [
