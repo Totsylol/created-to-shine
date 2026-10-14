@@ -2,6 +2,7 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import ProgramCard from "@/components/ProgramCard";
+import Stats from "@/components/Stats";
 import { PROGRAMS } from "@/lib/programs";
 
 export default function Home() {
@@ -56,6 +57,17 @@ export default function Home() {
       </Section>
 
       <Section tone="cream">
+        <div className="mb-10 text-center">
+          <h2 className="font-serif text-3xl font-semibold text-navy">Why This Work Matters</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-ink/80">
+            Individuals with disabilities and their families face real, measurable
+            gaps in employment and community life.
+          </p>
+        </div>
+        <Stats />
+      </Section>
+
+      <Section tone="cream-dark">
         <div className="mb-10 text-center">
           <h2 className="font-serif text-3xl font-semibold text-navy">Our Ministry Programs</h2>
           <p className="mx-auto mt-3 max-w-2xl text-ink/80">

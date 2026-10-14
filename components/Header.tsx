@@ -40,7 +40,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden 2xl:flex 2xl:items-center 2xl:gap-1">
+        <nav className="hidden xl:flex xl:items-center xl:gap-1">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
             return (
@@ -61,7 +61,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-navy 2xl:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy xl:hidden"
           aria-expanded={open}
           aria-label="Toggle navigation menu"
           onClick={() => setOpen((v) => !v)}
@@ -84,7 +84,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 2xl:hidden">
+        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 xl:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
