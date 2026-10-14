@@ -22,11 +22,11 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-3">
           <div className="flex items-start gap-3">
             <Image
-              src="/images/logo.jpg"
-              alt="Created To Shine Ministries logo"
-              width={48}
-              height={48}
-              className="rounded-full"
+              src="/images/icon.jpg"
+              alt="Created To Shine Ministries icon"
+              width={56}
+              height={56}
+              className="shrink-0"
             />
             <div>
               <p className="font-serif text-lg font-semibold">Created To Shine Ministries</p>

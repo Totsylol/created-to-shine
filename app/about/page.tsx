@@ -57,13 +57,10 @@ const SCRIPTURES = [
 export default function AboutPage() {
   return (
     <>
-      <Section tone="cream" className="!pb-10">
+      <Section tone="cream">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">About Us</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">Our Story</h1>
-      </Section>
-
-      <Section tone="cream" className="!pt-0">
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="mt-8 grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-4 text-ink/85 leading-relaxed">
             <p>
               After serving internationally with TeachBeyond for almost a decade,

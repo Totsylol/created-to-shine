@@ -24,11 +24,11 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
-            src="/images/logo.jpg"
-            alt="Created To Shine Ministries logo"
-            width={56}
-            height={56}
-            className="rounded-full"
+            src="/images/icon.jpg"
+            alt="Created To Shine Ministries icon"
+            width={72}
+            height={72}
+            className="shrink-0"
             priority
           />
           <span className="font-serif text-xl font-bold leading-tight text-gold-dark sm:text-2xl">

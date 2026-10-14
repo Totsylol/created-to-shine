@@ -17,8 +17,10 @@ export default function Section({
         : "bg-cream text-ink";
 
   return (
-    <section className={`${toneClasses} ${className}`}>
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">{children}</div>
+    <section className={toneClasses}>
+      <div className={`mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 ${className}`}>
+        {children}
+      </div>
     </section>
   );
 }
