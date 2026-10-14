@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 const SITE_USER = "board";
 const SITE_PASSWORD = "CreatedToShineRocks!";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const authHeader = request.headers.get("authorization");
 
   if (authHeader) {
@@ -27,5 +27,10 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  // Exclude Next's internal asset routes and any static file (images, fonts,
+  // etc.) under /public -- otherwise next/image's internal self-fetch for a
+  // public asset gets blocked by this same gate and breaks image loading.
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|avif|ico|css|js|map|woff|woff2|ttf)$).*)",
+  ],
 };

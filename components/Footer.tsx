@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Static on purpose -- a dynamic new Date() here would block prerendering.
+// Bump this each January.
+const COPYRIGHT_YEAR = 2026;
+
 const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
@@ -12,8 +16,6 @@ const NAV_LINKS = [
 ];
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="border-t border-gold/30 bg-navy text-cream">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
@@ -59,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-cream/20 pt-6 text-xs text-cream/60">
-          &copy; {year} Created to Shine Ministries. All rights reserved.
+          &copy; {COPYRIGHT_YEAR} Created to Shine Ministries. All rights reserved.
         </div>
       </div>
     </footer>
