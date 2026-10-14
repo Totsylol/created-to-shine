@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 
 // TODO: replace with the organization's own inbox once one is set up.
-const CONTACT_RECIPIENT = "jonahp@onsite-computers.com";
+const CONTACT_RECIPIENT = "7palmbranches@gmail.com";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
