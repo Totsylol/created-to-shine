@@ -31,7 +31,7 @@ export default function Header() {
             className="shrink-0"
             priority
           />
-          <span className="font-serif text-xl font-bold leading-tight text-gold-dark sm:text-2xl">
+          <span className="font-serif text-xl font-bold leading-tight text-blue sm:text-2xl">
             Created To Shine
             <span className="block text-xs font-sans font-medium tracking-wide text-gold-dark">
               MINISTRIES

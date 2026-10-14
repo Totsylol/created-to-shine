@@ -60,7 +60,15 @@ export default function AboutPage() {
       <Section tone="cream">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">About Us</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold text-navy">Our Story</h1>
-        <div className="mt-8 grid gap-10 lg:grid-cols-3">
+        <Image
+          src="/images/our-story-wide.jpg"
+          alt="Created To Shine Ministries team members joining hands together"
+          width={1400}
+          height={1012}
+          className="mt-8 w-full rounded-xl object-cover shadow-md"
+          priority
+        />
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-4 text-ink/85 leading-relaxed">
             <p>
               After serving internationally with TeachBeyond for almost a decade,
@@ -87,39 +95,30 @@ export default function AboutPage() {
               families, churches, and communities.
             </p>
           </div>
-          <div className="space-y-6">
-            <Image
-              src="/images/our-story.jpg"
-              alt="Created To Shine Ministries team members joining hands together"
-              width={1000}
-              height={1499}
-              className="w-full rounded-xl object-cover shadow-md"
-            />
-            <div className="rounded-xl border border-gold/30 bg-cream-dark p-6">
-              <h2 className="font-serif text-lg font-semibold text-navy">At A Glance</h2>
-              <dl className="mt-4 space-y-3 text-sm text-ink/80">
-                <div>
-                  <dt className="font-semibold text-navy">Location</dt>
-                  <dd>
-                    37706 Colonial Dr S
-                    <br />
-                    Westland, MI 48185
-                  </dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-navy">Status</dt>
-                  <dd>501(c)(3) tax-exempt as of July 17, 2026</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-navy">EIN</dt>
-                  <dd>42-4268107</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-navy">Public charity status</dt>
-                  <dd>170(b)(1)(A)(vi)</dd>
-                </div>
-              </dl>
-            </div>
+          <div className="rounded-xl border border-gold/30 bg-cream-dark p-6">
+            <h2 className="font-serif text-lg font-semibold text-navy">At A Glance</h2>
+            <dl className="mt-4 space-y-3 text-sm text-ink/80">
+              <div>
+                <dt className="font-semibold text-navy">Location</dt>
+                <dd>
+                  37706 Colonial Dr S
+                  <br />
+                  Westland, MI 48185
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-navy">Status</dt>
+                <dd>501(c)(3) tax-exempt as of July 17, 2026</dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-navy">EIN</dt>
+                <dd>42-4268107</dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-navy">Public charity status</dt>
+                <dd>170(b)(1)(A)(vi)</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </Section>
