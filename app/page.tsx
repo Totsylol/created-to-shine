@@ -17,7 +17,12 @@ export default function Home() {
             <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight text-navy sm:text-5xl">
               Equipping individuals with disabilities and their families to shine.
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-ink/80">
+            <p className="mt-5 max-w-xl text-sm italic leading-relaxed text-ink/70">
+              According to the World Health Organization, 1.3 billion people
+              (about 1 in 6 of the global population) experience a significant
+              disability.
+            </p>
+            <p className="mt-3 max-w-xl text-base leading-relaxed text-ink/80">
               Created To Shine Ministries educates and equips individuals with
               disabilities through vocational training, employment preparation,
               family education, and community partnerships &mdash; creating pathways
