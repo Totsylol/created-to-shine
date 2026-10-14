@@ -63,9 +63,9 @@ export default function AboutPage() {
         <Image
           src="/images/our-story-wide.jpg"
           alt="Created To Shine Ministries team members joining hands together"
-          width={1400}
-          height={1012}
-          className="mt-8 w-full rounded-xl object-cover shadow-md"
+          width={775}
+          height={560}
+          className="mx-auto mt-8 w-full max-w-[775px] rounded-xl object-cover shadow-md"
           priority
         />
         <div className="mt-10 grid gap-10 lg:grid-cols-3">
