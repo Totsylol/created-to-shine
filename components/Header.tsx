@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const NAV_LINKS = [
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/get-involved", label: "Get Involved" },
@@ -22,7 +23,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-gold/30 bg-cream/95 backdrop-blur supports-[backdrop-filter]:bg-cream/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setOpen(false)}>
           <Image
             src="/images/icon.jpg"
             alt="Created To Shine Ministries icon"
@@ -31,22 +32,22 @@ export default function Header() {
             className="shrink-0"
             priority
           />
-          <span className="font-serif text-2xl font-bold leading-tight text-blue sm:text-3xl">
+          <span className="whitespace-nowrap font-serif text-lg font-bold leading-tight text-blue sm:text-2xl lg:text-3xl">
             Created To Shine
-            <span className="block text-sm font-sans font-medium tracking-wide text-gold-dark sm:text-base">
+            <span className="block whitespace-nowrap text-xs font-sans font-medium tracking-wide text-gold-dark sm:text-sm lg:text-base">
               MINISTRIES
             </span>
           </span>
         </Link>
 
-        <nav className="hidden xl:flex xl:items-center xl:gap-1">
+        <nav className="hidden 2xl:flex 2xl:items-center 2xl:gap-1">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-md px-4 py-2.5 text-lg font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-md px-3 py-2 text-base font-medium transition-colors ${
                   active
                     ? "bg-navy text-cream"
                     : "text-navy hover:bg-navy/10"
@@ -60,7 +61,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-navy xl:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy 2xl:hidden"
           aria-expanded={open}
           aria-label="Toggle navigation menu"
           onClick={() => setOpen((v) => !v)}
@@ -83,7 +84,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 xl:hidden">
+        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 2xl:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;

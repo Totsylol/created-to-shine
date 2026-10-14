@@ -26,9 +26,9 @@ export default function ServicesPage() {
           <Image
             src="/images/our-programs.jpg"
             alt="A Created To Shine Ministries participant planning a program on a whiteboard"
-            width={580}
-            height={435}
-            className="aspect-[4/3] w-full rounded-xl object-cover shadow-md"
+            width={775}
+            height={1162}
+            className="mx-auto h-auto w-full max-w-xs rounded-xl shadow-md"
           />
         </div>
       </Section>
