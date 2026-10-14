@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gold/30 bg-cream/95 backdrop-blur supports-[backdrop-filter]:bg-cream/80">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
             src="/images/icon.jpg"
@@ -46,7 +46,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                className={`rounded-md px-4 py-2.5 text-base font-medium transition-colors ${
                   active
                     ? "bg-navy text-cream"
                     : "text-navy hover:bg-navy/10"
@@ -71,7 +71,7 @@ export default function Header() {
             viewBox="0 0 24 24"
             strokeWidth={1.8}
             stroke="currentColor"
-            className="h-7 w-7"
+            className="h-9 w-9"
           >
             {open ? (
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -92,7 +92,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`rounded-md px-3 py-2 text-sm font-medium ${
+                  className={`rounded-md px-4 py-2.5 text-base font-medium ${
                     active ? "bg-navy text-cream" : "text-navy hover:bg-navy/10"
                   }`}
                 >
