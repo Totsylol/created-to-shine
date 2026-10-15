@@ -83,8 +83,13 @@ export default function Header() {
         </button>
       </div>
 
-      {open && (
-        <nav className="border-t border-gold/30 bg-cream px-4 pb-4 pt-2 xl:hidden">
+      <div
+        aria-hidden={!open}
+        className={`grid overflow-hidden transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none xl:hidden ${
+          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <nav className="overflow-hidden border-t border-gold/30 bg-cream px-4 pb-4 pt-2">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
@@ -93,7 +98,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`rounded-md px-4 py-2.5 text-lg font-medium ${
+                  className={`rounded-md px-4 py-2.5 text-lg font-medium transition-colors ${
                     active ? "bg-navy text-cream" : "text-navy hover:bg-navy/10"
                   }`}
                 >
@@ -103,7 +108,7 @@ export default function Header() {
             })}
           </div>
         </nav>
-      )}
+      </div>
     </header>
   );
 }

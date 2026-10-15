@@ -151,7 +151,7 @@ export default function AboutPage() {
           {LEADERSHIP.map((leader) => (
             <div
               key={leader.name}
-              className="rounded-xl border border-gold/30 bg-cream-dark p-5"
+              className="rounded-xl border border-gold/30 bg-cream-dark p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0"
             >
               <p className="font-serif text-lg font-semibold text-navy">{leader.name}</p>
               <p className="mt-1 text-sm text-ink/75">{leader.role}</p>
@@ -172,7 +172,10 @@ export default function AboutPage() {
         </p>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SCRIPTURES.map((s) => (
-            <div key={s.ref} className="rounded-lg border border-cream/20 p-4">
+            <div
+              key={s.ref}
+              className="rounded-lg border border-cream/20 p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-cream/5 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            >
               <p className="font-serif font-semibold text-gold-light">{s.ref}</p>
               <p className="mt-1 text-sm text-cream/80">{s.note}</p>
             </div>

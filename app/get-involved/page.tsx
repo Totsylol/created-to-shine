@@ -47,7 +47,10 @@ export default function GetInvolvedPage() {
       <Section tone="cream" className="!pt-0">
         <div className="grid gap-6 sm:grid-cols-2">
           {WAYS.map((way) => (
-            <div key={way.title} className="rounded-xl border border-gold/30 bg-cream-dark p-6">
+            <div
+              key={way.title}
+              className="rounded-xl border border-gold/30 bg-cream-dark p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            >
               <h2 className="font-serif text-xl font-semibold text-navy">{way.title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-ink/80">{way.body}</p>
             </div>
