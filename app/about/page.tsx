@@ -11,19 +11,23 @@ export const metadata: Metadata = {
 const LEADERSHIP = [
   {
     name: "Avdi Muco",
-    role: "President, Coffee Co. Director",
+    role: "President, Café & Employment Director",
   },
   {
     name: "Christina Muco",
-    role: "Vice President, Education Program Director",
+    role: "Vice President, Education & Training Director",
   },
   {
     name: "Megan Tucci",
-    role: "Treasurer, Curriculum Development",
+    role: "Treasurer, Curriculum Director",
   },
   {
     name: "Andy Palm",
-    role: "Secretary, Operations Management",
+    role: "Secretary, Administration & Systems Director",
+  },
+  {
+    name: "Open Position",
+    role: "Development & Communications Director",
   },
 ];
 
@@ -147,16 +151,29 @@ export default function AboutPage() {
 
       <Section tone="cream">
         <h2 className="font-serif text-2xl font-semibold text-navy">Leadership</h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {LEADERSHIP.map((leader) => (
-            <div
-              key={leader.name}
-              className="rounded-xl border border-gold/30 bg-cream-dark p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-            >
-              <p className="font-serif text-lg font-semibold text-navy">{leader.name}</p>
-              <p className="mt-1 text-sm text-ink/75">{leader.role}</p>
-            </div>
-          ))}
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {LEADERSHIP.map((leader) => {
+            const open = leader.name === "Open Position";
+            return (
+              <div
+                key={leader.name}
+                className={`rounded-xl p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
+                  open
+                    ? "border border-dashed border-gold/50 bg-cream"
+                    : "border border-gold/30 bg-cream-dark"
+                }`}
+              >
+                <p
+                  className={`font-serif text-lg font-semibold ${
+                    open ? "italic text-navy/70" : "text-navy"
+                  }`}
+                >
+                  {leader.name}
+                </p>
+                <p className="mt-1 text-sm text-ink/75">{leader.role}</p>
+              </div>
+            );
+          })}
         </div>
       </Section>
 
